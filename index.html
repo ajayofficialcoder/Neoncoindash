@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#050814">
+  <meta name="description" content="Neon Coin Dash - Fast-paced neon arcade runner for YouTube Playables">
+  <title>Neon Coin Dash</title>
+
+  <!-- YouTube Playables Official SDK v1 (Loaded before any game script) -->
+  <script src="https://www.youtube.com/game_api/v1"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container" role="main" aria-label="Neon Coin Dash Game Container">
+    <canvas id="gameCanvas" width="720" height="1280" aria-label="Neon Coin Dash Game Canvas"></canvas>
+
+    <!-- Accessible On-Screen Touch Controls for Mobile/Tablet Play -->
+    <div id="touch-controls" class="touch-controls" aria-hidden="true">
+      <button id="btn-left" class="touch-btn" aria-label="Move Left">
+        <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+        </svg>
+      </button>
+      <button id="btn-right" class="touch-btn" aria-label="Move Right">
+        <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+          <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
